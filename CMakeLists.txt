@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.9)
 
-set(CMAKE_CXX_FLAGS ${CMAKE_CXX_FLAGS} "-Ddont_use_base=1")
+add_definitions(-Ddont_use_base=1)
 
 add_custom_command(OUTPUT lines_with_foobar.txt
   COMMAND grep -i foobar base.h derived.h > ${CMAKE_CURRENT_BINARY_DIR}/lines_with_foobar.txt || true
