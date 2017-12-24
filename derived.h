@@ -1,4 +1,4 @@
-#ifndef dont_use_base
+#ifdef dont_use_base
 class base {
 };
 #else
