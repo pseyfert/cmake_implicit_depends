@@ -9,6 +9,10 @@ options.  The executable `main` should thus be rebuilt whenever `main.cpp` or
 The CMake option `IMPLICIT_DEPENDS` is tested for a custom command. It is set
 up to have the same depends as `main`.
 
+The script `runall.sh` runs CMake a few times (generation and compilation) for
+both generators and touches files to se what rebuild steps get done/omitted.
+The results are in the [result file](./Result.md).
+
 ## observation with make
 
 CMake is set up to figure dependencies for C/C++ files out by itself, and
